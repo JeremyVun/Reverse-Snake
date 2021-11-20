@@ -1,0 +1,20 @@
+{
+  "files": {
+    "ai/bfs.py": [
+      {
+        "id": "94987fca-ac42-4f53-864f-d14cbf457080",
+        "line": 13,
+        "version": 578,
+        "index": 247
+      }
+    ],
+    "config/config.py": [
+      {
+        "id": "13521e90-5495-4768-8f11-a2dd61954803",
+        "line": 1,
+        "version": 2,
+        "index": 0
+      }
+    ]
+  }
+}

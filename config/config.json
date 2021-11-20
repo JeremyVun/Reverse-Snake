@@ -1,0 +1,7 @@
+{
+  "width": 240,
+  "height": 240,
+  "box_size": 24,
+  "draw_explored": true,
+  "draw_path": true
+}
