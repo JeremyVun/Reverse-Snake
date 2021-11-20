@@ -10,5 +10,6 @@ def main():
   # Initialise the game
 
   # event loop
+  pass
 
 main()
