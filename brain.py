@@ -10,13 +10,26 @@ class Brain:
 
   def find_path(self, body, food, grid):
     start = body[0]
-    visited = body[1:]
+    visited = {bodypart:True for bodypart in body[1:]}
     goal = food.pos
 
     # Use the injected strategy
-    path = self.strategy(start, goal, visited, grid)
-    #path, explored = self.strategy(start, goal, visited, grid)
+    parents = self.strategy(start, goal, visited, grid)
+    path = self.get_path(start, goal, parents)
+    path.remove(start)
 
+    return path
+
+
+  def get_path(self, start, end, parents):
+    path = []
+
+    current_square = end
+    while (current_square != start):
+      parent_square = parents[current_square]
+      path.insert(0, parent_square)
+      current_square = parent_square
+      
     return path
 
 

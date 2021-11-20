@@ -47,7 +47,7 @@ class GameFactory():
     # Create the snake
     snake_pos = Pos(8, 8)
     snake_length = 5
-    snake_brain = dumb_brain()
+    snake_brain = bfs_brain()
     snake_speed = 0.2
 
     snake = Snake(snake_pos, snake_length, snake_speed, snake_brain, food, grid)

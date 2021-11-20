@@ -28,3 +28,7 @@ class Pos:
   # Print us a pretty string
   def __str__(self):
     return f"<x: {self.x}, y: {self.y}>"
+
+  # Print us a pretty string
+  def __repr__(self):
+    return f"({self.x}, {self.y})"

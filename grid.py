@@ -14,6 +14,33 @@ class Grid:
     self.box_size = box_size
     self.line_width = line_width
 
+  # Get neighbouring children of a current position
+  def get_children(self, pos):
+    children = []
+
+    # Get child to right of us
+    if pos.x < self.num_cols - 1:
+      child = pos.clone().move(1, 0)
+      children.append(child)
+          
+    # get child to left of us
+    if pos.x > 0:
+      child = pos.clone().move(-1, 0)
+      children.append(child)
+
+    # get child below us
+    if pos.y < self.num_rows - 1:
+      child = pos.clone().move(0, 1)
+      children.append(child)
+    
+    # get child above us
+    if pos.y > 0:
+      child = pos.clone().move(0, -1)
+      children.append(child)
+    
+    return children
+    
+
   # Render the grid
   def render(self):
     for i in range(self.num_rows):
