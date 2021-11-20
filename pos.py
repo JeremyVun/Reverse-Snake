@@ -1,4 +1,5 @@
-# A Position utility class to help us write cleaner code
+# A Utility class that keeps track of (x, y) vectors
+# Helps us write cleaner code
 class Pos:
   def __init__(self, x, y):
     self.x = x

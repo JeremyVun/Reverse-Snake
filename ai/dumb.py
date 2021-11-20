@@ -1,5 +1,5 @@
 # A dumb AI that makes the snake go in random direction
-# Returns explored, path
+# We can use this to test our snake code
 
 import random
 from .dfs import get_children
